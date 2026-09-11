@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Gallery</title>
+<style>
+    .skip-link {
+        position: absolute;
+        left: -9999px;
+    }
+
+    .skip-link:focus {
+        position: static;
+        background-color: yellow;
+        color: black;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+        background-color: #333;
+        padding: 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 15px;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+        text-decoration: underline;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    img {
+        width: 100%;
+        border: 3px solid black;
+        padding: 5px;
+        border-radius: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Skip to Main Content
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main id="main-content">
+        <h1>My Gallery</h1>
+        <img src="images/My%20photo.jpg" alt="My photo">
+        <img src="images/My%20photo2.jpg" alt="My photo 2">
+        <img src="images/My%20photo.jpg" alt="My photo">
+<img src="images/My%20photo2.jpg" alt="My photo 2">
+<img src="images/My%20photo.jpg" alt="My photo">
+
+    </main>
+
+</body>
+</html>

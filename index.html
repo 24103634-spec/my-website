@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Website của Hà My</title>
+<style>
+
+    .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 10px;
+    }
+
+    .skip-link:focus {
+        position: static;
+        background-color: yellow;
+        color: black;
+        padding: 10px;
+    }
+img {
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 15px;
+}
+nav {
+    display: flex;
+    gap: 20px;
+    background-color: #333;
+    padding: 15px;
+}
+nav a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+li:nth-child(2) {
+    font-weight: bold;
+}
+</style>        
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">
+    Skip to Main Content
+</a>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+<main id="main-content">
+
+    <h1>Welcome to My Personal Website</h1>
+
+    <p>
+        Hello! Welcome to my personal website.
+        This website introduces my interests and hobbies.
+    </p>
+<img src="images/My%20photo.jpg" alt="My personal photo">
+    <h2>My Interests</h2>
+
+    <ul>
+        <li>Learning English</li>
+        <li>Learning Chinese</li>
+        <li>Technology</li>
+    </ul>
+
+</main>
+</body>
+
+</html>
